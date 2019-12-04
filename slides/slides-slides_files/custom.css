@@ -1,0 +1,163 @@
+/*
+body {
+background-color: #ffffff;
+}
+
+
+.reveal p {
+color: white;
+}
+.reveal ul, ol {
+color: white;
+}
+div.output_area pre {
+color: white;
+}
+div.output_stderr {
+background: #F00;
+}
+*/
+
+.reveal table th, .reveal table td {
+color: white;
+}
+
+
+/*
+body:after {
+display: inline-block;
+height: 32px;
+width: 32px;
+background: url("kcl-logo.png") no-repeat 0 0;
+position: absolute;
+top: 0.5em;
+right: 0.5em;
+content: "";
+}
+*/
+
+
+body:after {
+content: url("kcl-logo.png");
+position: absolute;
+top: 1cm;
+right: 1cm;
+}
+
+
+body  {
+    background-image: url("Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg");
+/*    background-repeat: no-repeat;*/
+    background-size: cover;
+
+}
+
+.reveal section  {
+    background-color: #ffffff
+}
+
+
+
+.slide {
+  text-align: top;
+  vertical-align: top;
+}
+
+.footer {
+    color: green;
+    position: fixed;
+    top: 95%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.title_class{
+  background-color: #000000
+}
+
+.left_column{
+  position: absolute;
+  left: -10px;
+  width: 100px;
+  height: 120px;
+  border: 3px solid blue;
+}
+
+
+.column {
+    float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.main-footer {
+  position: fixed;
+  z-index: -1;
+  height: 700px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ }
+}
+
+
+
+.header-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.header-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.footer-left {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+
+
+.fragment.current-visible.visible:not(.current-fragment) {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+
+.fragment.current-visible.visible:not(.current-fragment) {
+    animation: removed-item-animation 0.0s cubic-bezier(0.6, -0.05, 0.9, 0.9) forwards;
+}
+@keyframes removed-item-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        line-height: 0px;
+        font-size: 0px;
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+}
+

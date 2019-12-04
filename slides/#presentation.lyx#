@@ -1,0 +1,490 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%usepackage{listings}
+\usetheme{Warsaw}
+
+% or ...
+%\usetheme{Antibes}	% tree outline, neat
+%\usetheme{JuanLesPins}	% like Antibes, with shading
+%\usetheme{Bergen}	% outline on side
+%\usetheme{Luebeck}	% like Warsaw, square sides
+%\usetheme{Berkeley}	% interesting left bar outline
+%\usetheme{Madrid}	% clean, nice.  7/12 page numbers
+%\usetheme{Berlin}	% dots show slide number
+%\usetheme{Malmoe}	% OK, plain, unshaded
+%\usetheme{Boadilla}	% nice, white bg, no top bar
+%\usetheme{Marburg}	% nice, outline on right
+%\usetheme{boxes}	% ???
+%\usetheme{Montpellier}	% tree outline on top, plainish white
+%\usetheme{Copenhagen}	% like Warsaw
+%\usetheme{PaloAlto}	% looks good
+%\usetheme{Darmstadt}	% like Warsaw with circle outline
+%\usetheme{Pittsburgh}
+%\usetheme{default}
+%\usetheme{Rochester}	% like boxy, unshaded warsaw
+%\usetheme{Dresden}	% circle outline on top
+%\usetheme{Singapore}	% purple gradient top
+%\usetheme{Frankfurt}	% like Warsaw with circle outline on top
+%\usetheme{Szeged}
+%\usetheme{Goettingen}	% light purple right bar outline
+%\usetheme{Warsaw}
+%\usetheme{Hannover}	% like Goett with bar on left
+%\usetheme{compatibility}
+%\usetheme{Ilmenau}
+
+%\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+%\usecolortheme{seahorse}
+%\usecolortheme{rose}
+
+% seems to fix typewriter font in outline header:
+%\usepackage{ae,aecompl}
+\usepackage{epstopdf}
+\graphicspath{{images/}}
+\usepackage{graphicx}
+%\usepackage{xcolor}
+
+\definecolor{biomedia_dark_blue}{RGB}{0,63,119}
+\definecolor{biomedia_text_blue}{RGB}{0,30,60}
+\definecolor{biomedia_light_blue}{RGB}{195,214,226}
+\definecolor{biomedia_green}{RGB}{163,193,20}
+\definecolor{biomedia_dark_green}{RGB}{81,96,10}
+\definecolor{biomedia_mid_blue}{RGB}{119,150,178}
+\definecolor{biomedia_unsat_dark_blue}{RGB}{40,56,70}
+
+
+\definecolor{green_c}{RGB}{0,128,0}
+\definecolor{red_c}{RGB}{128,0,0}
+\definecolor{blue_c}{RGB}{0,0,128}
+\definecolor{grey_c}{RGB}{128,128,128}
+
+\setbeamercolor{author}{fg=biomedia_dark_blue,bg=}
+\setbeamercolor{date}{fg=biomedia_dark_blue,bg=}
+\setbeamercolor{title}{fg=biomedia_dark_blue,bg=}
+\setbeamercolor{institute}{fg=biomedia_dark_blue,bg=}
+
+%\setbeamertemplate{frametitle}{\insertframetitle\\\usebeamerfont{framesubtitle}\insertframesubtitle}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\normalsize}
+
+
+\setbeamercolor{frametitle}{bg=biomedia_dark_blue}
+\setbeamercolor{structure}{fg=biomedia_dark_blue}
+\setbeamercolor{normal text}{fg=biomedia_text_blue}
+
+
+\setbeamercolor{title in head/foot}{fg=white, bg=biomedia_dark_blue}
+
+\setbeamercolor{itemize item}{fg=grey_c}
+\setbeamertemplate{itemize item}[triangle]
+
+
+\setbeamercolor{itemize subitem}{fg=grey_c}
+\setbeamertemplate{itemize subitem}[circle]
+
+
+\setbeamercolor{itemize subsubitem}{fg=grey_c}
+\setbeamertemplate{itemize subsubitem}[triangle]
+
+
+
+
+\newenvironment{green_bulletenv}{\only{
+\setbeamertemplate{itemize item}[circle]
+\setbeamercolor{itemize item}{fg=grey_c}}}{} 
+
+\newenvironment{red_bulletenv}{\only{
+\setbeamertemplate{itemize item}[circle]
+\setbeamercolor{itemize item}{fg=red_c}}}{}
+
+
+\newenvironment{grey_bulletenv}{\only{
+\setbeamertemplate{itemize item}[circle]
+\setbeamercolor{itemize item}{fg=grey_c}}}{} 
+
+\newenvironment{blue_bulletenv}{\only{
+\setbeamertemplate{itemize item}[circle]
+\setbeamercolor{itemize item}{fg=blue_c}}}{}
+
+
+
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
+
+
+\usepackage{transparent}
+\usepackage[adobe-utopia]{mathdesign}
+%\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{amsmath}
+
+
+%\let\oldfootnotesize\footnotesize
+%\renewcommand*{\footnotesize}{\oldfootnotesize\tiny}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+
+\setbeamertemplate{navigation symbols}{}
+ \setbeamertemplate{headline}{}
+\usefonttheme[onlymath]{serif}
+
+
+\definecolor{Orange}{rgb}{0.7, 0.5, 0.07}
+\definecolor{Red}{rgb}{0.7, 0.07, 0.07}
+\definecolor{Green}{rgb}{0.07, 0.7,0.07}
+
+\usepackage{animate}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman cmr
+\font_sans cmss
+\font_typewriter cmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\notefontcolor #000093
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+title[Joint US and MR-based atlasing (WP3.1.2)]{Joint US and MR-based atlas
+ (WP3.1.2)}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+8th Feb.
+ 2018
+\end_layout
+
+\begin_layout Author
+Robert Wright
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Animation of spatial transformer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[autoplay,loop,scale=0.8]{5}{/data/presentations/16-09-18-pippi/re
+gistration-frames/registration-frames-}{1}{9}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+MR / US registration - why?
+\end_layout
+
+\begin_layout Itemize
+Potential benefits for diagnosis complimentary information 
+\end_layout
+
+\begin_layout Itemize
+Improving Ultrasound technologies
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Big focus of our project is 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Joint annotation - learn manual segmentations in US
+\end_layout
+
+\begin_layout Itemize
+Compounding - coalign stream of US Use MR Template to align stream data
+ f
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+noise reduction, super-resolution (all the fancy stuff with MR reconstruction)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Method - Overview
+\end_layout
+
+\begin_layout Itemize
+First foray into deep learning and registration
+\end_layout
+
+\begin_layout Itemize
+Iterative approach - makes problem easier
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Spatial transformers
+\end_layout
+
+\begin_layout Itemize
+Backpropagation of errors through time - learn long term stratagy - makes
+ it robust
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+scaling up of images
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Loss Function
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Joint Spatio-temporal
+\end_layout
+
+\begin_layout Itemize
+Boostrapping - avoid pairwise registrations
+\end_layout
+
+\begin_layout Standard
+Video
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Joint Spatio-temporal
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Joint Spatio-temporal
+\end_layout
+
+\begin_layout Standard
+Framerate = 7 hours of gestation
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Results - alignment error
+\end_layout
+
+\begin_layout Standard
+Alignment errors
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Results - templates
+\end_layout
+
+\begin_layout Standard
+Alignment errors 
+\end_layout
+
+\begin_layout Standard
+robust 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Templates - up close
+\end_layout
+
+\begin_layout Standard
+Alignment errors 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Strengths, limitations and Future work
+\end_layout
+
+\begin_layout Standard
+Limitations
+\end_layout
+
+\begin_layout Itemize
+Limited views - static volumes
+\end_layout
+
+\begin_layout Standard
+Future work
+\end_layout
+
+\begin_layout Standard
+Fetal centric views of 
+\end_layout
+
+\begin_layout Standard
+Application to stream data
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Reorientation of stream data and compounding
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Video of stream data, compounding
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
